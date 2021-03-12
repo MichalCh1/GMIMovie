@@ -9,9 +9,7 @@ const routes = require('./routes/movieRoutes');
 app.use(bodyParser.json());
 
 app.use('/api', routes);
-app.use('/', (req, res) => {
-    res.send('GMIMovies')
-})
+
 
 mongoose.connect(`mongodb+srv://${process.env.DB_HOST}:${process.env.DB_PASSWORD}@cluster0.q0wj6.mongodb.net/GMIMovies`, { useNewUrlParser: true })
     .then(() => { console.log('Connected!') })
