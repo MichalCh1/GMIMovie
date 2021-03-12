@@ -16,4 +16,4 @@ mongoose.connect(`mongodb+srv://${process.env.DB_HOST}:${process.env.DB_PASSWORD
     .then(() => { console.log('Connected!') })
     .catch(() => { console.log('Connected Failed!') });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
