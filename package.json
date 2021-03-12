@@ -1,18 +1,23 @@
 {
-  "name": "gmimovie",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "MChlystek",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.11.19",
-    "request": "^2.88.2"
-  }
+    "name": "gmimovie",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "MChlystek",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "chai": "^4.3.3",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mocha": "^8.3.1",
+        "mongoose": "^5.11.19",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "chai-http": "^4.3.0"
+    }
 }
